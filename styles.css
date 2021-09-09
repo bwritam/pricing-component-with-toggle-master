@@ -75,6 +75,8 @@
 	    margin-top: 2em;
 	    border-radius: 10px;
 	    padding-bottom: 2.325em;
+	    /* box-shadow: 1px 1px 10px 5px hsl(234deg 14% 74%); */
+	    /* you can use box shadow to look good */
 	}
 
 	.master {

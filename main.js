@@ -1,5 +1,16 @@
-// https://www.w3schools.com/howto/howto_js_validation_empty_input.asp
-// https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
-// https://www.w3schools.com/howto/howto_css_switch.asp
+document.querySelector(".slider").addEventListener("click", toggle);
 
-
+var clicked = false;
+function toggle() {
+	if (!clicked) {
+		clicked = true;
+		document.querySelector(".change1").innerHTML = "&dollar;19.99";
+		document.querySelector(".change2").innerHTML = "&dollar;24.99";
+		document.querySelector(".change3").innerHTML = "&dollar;39.99";
+	} else {
+		clicked = false;
+		document.querySelector(".change1").innerHTML = "&dollar;199.99";
+		document.querySelector(".change2").innerHTML = "&dollar;249.99";
+		document.querySelector(".change3").innerHTML = "&dollar;399.99";
+	}
+}

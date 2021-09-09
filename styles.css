@@ -63,7 +63,7 @@
 		background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 	}
 
-	.professional .btn {
+	.white {
 		background-color: #fff;
 		color: hsl(237, 63%, 64%);
 	}
@@ -156,6 +156,220 @@
 	  background-color: white;
 	  -webkit-transition: .4s;
 	  transition: .4s;
+	}
+
+	input:checked + .slider {
+	  background-color: hsl(237, 63%, 64%);
+	}
+
+	input:focus + .slider {
+	  box-shadow: 0 0 1px hsl(237, 63%, 64%);
+	}
+
+	input:checked + .slider:before {
+	  -webkit-transform: translateX(26px);
+	  -ms-transform: translateX(26px);
+	  transform: translateX(26px);
+	}
+
+	.slider{
+		border-radius: 34px;
+	}
+
+	.slider:before {
+		border-radius: 50%;
+	}
+
+	.attribution { 
+		font-size: 11px; 
+		text-align: center;
+	}
+	.attribution a { 
+		color: hsl(228, 45%, 44%);
+	}
+}
+
+
+
+
+@media only screen and (min-width: 800px) {
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+	body{
+		background-image: url('images/bg-top.svg'), url('images/bg-bottom.svg'), linear-gradient(hsl(236, 42%, 96%), hsl(237, 58%, 92%));
+		background-repeat: no-repeat, no-repeat;
+		background-position: 100% 1%, -1% 100%;
+		font-family: "Montserrat", sans-serif;
+		text-align: center;
+	}
+
+	body,
+	h1,
+	h3 {
+		margin: 0;
+	}
+
+	h3 {
+		color: hsl(233, 13%, 49%);
+	}
+
+	h1 {
+		color:  hsl(232, 13%, 33%);
+		padding-bottom: 1em;
+	}
+
+	.four {
+		margin-bottom: 2em;
+	}
+
+	.toggle h3 {
+		color: hsl(234, 14%, 74%);
+		font-size: 0.825rem;
+	}
+	.container {
+	    padding-top: 4em;
+	    padding-bottom: 2em;
+	    margin-inline: auto;
+	}
+
+	.toggle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 2em;
+	}
+
+	.btn {
+		text-decoration: none;
+		color: #fff;
+		padding: 0.925em 7em;
+		border-radius: 5px;
+		font-size: 0.725rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	.btn:hover {
+		background: #fff;
+		color: hsl(237, 63%, 64%);
+		border: 1px solid hsl(237, 63%, 64%);
+	}
+
+	.purple {
+		background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+	}
+
+	.white {
+		background-color: #fff;
+		color: hsl(237, 63%, 64%);
+	}
+	.white:hover {
+		background: hsl(237, 63%, 64%);
+		color: #fff;
+		border: 1px solid #fff;
+	}
+
+
+	.basic {
+		background-color: #fff;
+	    /* margin-inline: 1.325em; */
+	    padding: 1.625em;
+	    margin-top: 2em;
+	    border-radius: 10px 0 0 10px;
+	    padding-bottom: 2.325em;
+	}
+
+	.master {
+		background-color: #fff;
+	    /* margin-inline: 1.325em; */
+	    padding: 1.625em;
+	    margin-top: 2em;
+	    border-radius: 0 10px 10px 0;
+	    padding-bottom: 2.325em;
+	}
+
+	.professional {
+		/* background-color: hsl(237, 63%, 64%); */
+		background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+		/* margin-inline: 1.325em; */
+	    padding: 4em 1.625em;
+	    margin-top: 2em;
+	    border-radius: 10px;
+	    padding-bottom: 5em;
+	}
+
+	.professional h1 {
+		color: hsl(240, 78%, 98%);
+	}
+	.professional h3 {
+		color: hsl(240, 78%, 98%);
+	}
+
+	.cta h1 {
+		font-size: 3.250rem;
+	}
+
+	.cta h1, h3 {
+		padding: 0.325em;
+	}
+
+	.cta {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 2em;
+	}
+
+	.small{
+		font-size: 0.825rem;
+	}
+
+	.big {
+		font-size: 1rem;
+	}
+/* ---------------Toggle Switch-------------- */
+	.switch {
+	  position: relative;
+	  display: inline-block;
+	  width: 60px;
+	  height: 34px;
+	  margin-inline: 1.625em;
+	}
+
+	.switch input { 
+	  opacity: 0;
+	  width: 0;
+	  height: 0;
+	}
+
+	.slider {
+	  position: absolute;
+	  cursor: pointer;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  /* background-color: hsl(237, 63%, 64%); */
+	  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	}
+
+	.slider:before {
+	  position: absolute;
+	  content: "";
+	  height: 26px;
+	  width: 26px;
+	  left: 4px;
+	  bottom: 4px;
+	  background-color: white;
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	}
+	.slider:hover {
+		opacity: 0.5;
 	}
 
 	input:checked + .slider {
